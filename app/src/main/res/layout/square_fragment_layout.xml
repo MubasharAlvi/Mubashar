@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ui.main.view.SquareFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/squarepreviewviewid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/timericonid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            app:backgroundTint="@android:color/transparent"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/timer_icon" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flash_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            app:backgroundTint="@android:color/transparent"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/flash_icon" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/switchLens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            app:backgroundTint="@android:color/transparent"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/flip_icon" />
+
+        <TextView
+            android:id="@+id/cameraId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="90dp"
+            android:text="CAMERA"
+            android:textColor="#FFFFff" />
+
+        <TextView
+            android:id="@+id/videoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="90dp"
+            android:layout_marginStart="30dp"
+            android:text="VIDEO"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/squareid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="90dp"
+            android:layout_marginEnd="30dp"
+            android:text="SQUARE"
+            android:textColor="#fff000" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/beautymodeid"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="325dp"
+            android:src="@drawable/beauty_icon"
+            app:fabSize="normal" />
+        <!--android:onClick="@{() -> cameraBinding.takePhoto()}"-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Squarecameraid"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/camera_lens"
+            app:civ_border_color="#F8F8F8"
+            app:civ_border_width="1.5dp"
+            app:fabSize="normal" />
+        <!--               android:onClick="@{() -> cameraBinding.takePhoto()}"-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gallery_icon_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:src="@drawable/gllery"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="1.5dp" />
+    </RelativeLayout>
+</layout>

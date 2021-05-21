@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenClass">
+
+    <fragment
+        android:id="@+id/splashScreenClass"
+        android:name="com.ui.main.view.SplashScreenClass"
+        android:label="splash_screen"
+        tools:layout="@layout/splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenClass_to_cameraHomeScreenClass"
+            app:destination="@id/cameraHomeScreenClass" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraHomeScreenClass"
+        android:name="com.ui.main.view.CameraHomeScreenFragment"
+        android:label="camera_home_screen"
+        tools:layout="@layout/camera_home_screen" >
+        <action
+            android:id="@+id/action_cameraHomeScreenClass_to_beautyModeClass2"
+            app:destination="@id/beautyModeClass2" />
+        <action
+            android:id="@+id/action_cameraHomeScreenClass_to_videoFragment2"
+            app:destination="@id/videoFragment2" />
+        <action
+            android:id="@+id/action_cameraHomeScreenClass_to_squareFragment2"
+            app:destination="@id/squareFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment2"
+        android:name="com.ui.main.view.VideoFragment"
+        android:label="video_fragment_layout"
+        tools:layout="@layout/video_fragment_layout" >
+        <action
+            android:id="@+id/action_videoFragment2_to_squareFragment22"
+            app:destination="@id/squareFragment2" />
+        <action
+            android:id="@+id/action_videoFragment2_to_cameraHomeScreenClass2"
+            app:destination="@id/cameraHomeScreenClass" />
+    </fragment>
+    <fragment
+        android:id="@+id/squareFragment2"
+        android:name="com.ui.main.view.SquareFragment"
+        android:label="square_fragment_layout"
+        tools:layout="@layout/square_fragment_layout" >
+        <action
+            android:id="@+id/action_squareFragment2_to_videoFragment22"
+            app:destination="@id/videoFragment2" />
+        <action
+            android:id="@+id/action_squareFragment2_to_cameraHomeScreenClass2"
+            app:destination="@id/cameraHomeScreenClass" />
+    </fragment>
+    <fragment
+        android:id="@+id/beautyModeClass2"
+        android:name="com.ui.main.view.BeautyModeClass"
+        android:label="beauty_mode"
+        tools:layout="@layout/beauty_mode" />
+</navigation>
